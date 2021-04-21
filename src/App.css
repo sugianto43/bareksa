@@ -1,38 +1,54 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: 0.5fr 2.5fr 2.5fr;
+  grid-template-areas: 
+  'header'
+  'graph'
+  'table';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-container {
+  grid-area: header;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.graph-container {
+  grid-area: graph;
+  display: grid;
+  margin: 0px 25px;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'chart1 chart2 graph graph';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pie-chart1 {
+  grid-area: chart1;
+  background-color: aquamarine;
 }
 
-.App-link {
-  color: #61dafb;
+.pie-chart2 {
+  grid-area: chart2;
+  background-color: cadetblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.graph {
+  grid-area: graph;
+  background-color: coral;
+}
+
+.table-container {
+  grid-area: table;
+  grid-gap: 20px;
+  display: grid;
+  margin: 0px 25px;
+  grid-template-columns: 1.2fr 0.8fr 1fr 1fr;
+  grid-template-areas: 'calendar table table table';
+}
+
+.calendar {
+  grid-area: calendar;
+}
+
+.table {
+  grid-area: table;
 }

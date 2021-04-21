@@ -1,0 +1,114 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 88px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-image {
+    width: 120px;
+    height: 32px;
+    margin-right: 50px;
+    margin-left: 25px;
+}
+
+.name {
+    font-family: Montserrat;
+    margin-bottom: 0px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    text-align: left;
+}
+
+.place {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    color: #9C9C9C;
+    margin-bottom: 0px;
+}
+
+.arrow {
+    align-self: center;
+}
+
+.user {
+    align-self: center !important;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+.right-header-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-right {
+    display: flex;
+    border: 1px solid #DDDDDD;
+    width: 296px;
+    Height: 56px;
+    border-radius: 4px;
+    align-self: center;
+}
+
+#search-icon {
+    padding: 20px 10px;
+    font-size: 15px !important;
+}
+
+.input-text {
+    border: none;
+    width: 265px;
+}
+
+.notif-setting {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fa-bell {
+    text-align: left;
+    font-size: 22px;
+    padding-left: 25px;
+    color: #333333;
+}
+
+.setting {
+    font-size: 22px;
+    padding-top: 0px !important;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #333333;
+}
+
+.date {
+    background-color: #F5F5F5;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.4px;
+    color: #333333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 16px;
+}
