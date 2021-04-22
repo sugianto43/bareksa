@@ -39,6 +39,10 @@ thead tr:nth-child(1) th {
     color: #333333;
 }
 
+.text-table {
+  margin-bottom: 0px;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 6px;

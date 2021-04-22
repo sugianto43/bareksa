@@ -1,0 +1,33 @@
+
+
+.header-pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.header-pie .dots {
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    text-align: center;
+    align-self: center;
+    /* padding: 10px; */
+    margin-top: 0px;
+    padding-bottom: 5px;
+    padding-top: 0px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header-pie .text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}

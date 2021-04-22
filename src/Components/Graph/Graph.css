@@ -1,0 +1,28 @@
+.graph-containers {
+    display: flex;
+    flex-direction: column;
+    margin: 20px
+}
+
+.header-graph {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text-graph {
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    padding: 5px 10px;
+    align-self: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}

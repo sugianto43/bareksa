@@ -1,7 +1,7 @@
 .App {
   display: grid;
   grid-gap: 20px;
-  grid-template-rows: 0.5fr 2.5fr 2.5fr;
+  grid-template-rows: 0.5fr 2fr 2.5fr;
   grid-template-areas: 
   'header'
   'graph'
@@ -17,23 +17,26 @@
   display: grid;
   margin: 0px 25px;
   grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1.1fr 1.1fr 0.8fr 1fr;
   grid-template-areas: 'chart1 chart2 graph graph';
 }
 
 .pie-chart1 {
   grid-area: chart1;
-  background-color: aquamarine;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
 }
 
 .pie-chart2 {
   grid-area: chart2;
-  background-color: cadetblue;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
 }
 
 .graph {
   grid-area: graph;
-  background-color: coral;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
 }
 
 .table-container {
@@ -43,12 +46,17 @@
   margin: 0px 25px;
   grid-template-columns: 1.2fr 0.8fr 1fr 1fr;
   grid-template-areas: 'calendar table table table';
+  margin-bottom: 30px !important;
 }
 
 .calendar {
   grid-area: calendar;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
 }
 
 .table {
   grid-area: table;
+  border-bottom: 1px solid #DDDDDD;
+  margin-bottom: 0px;
 }
