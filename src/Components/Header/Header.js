@@ -13,7 +13,7 @@ function Header() {
             style={{ fontSize: "40px", color: "#9C9C9C", alignSelf: "center" }}
           ></i>
           <div className="user">
-            <p className="name">Reinhart H.</p>
+            <p id="name">Reinhart H.</p>
             <p className="place">Kemang, Jakarta</p>
           </div>
           <i className="fas fa-angle-down arrow" />

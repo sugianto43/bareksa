@@ -22,7 +22,7 @@
     margin-left: 25px;
 }
 
-.name {
+#name {
     font-family: Montserrat;
     margin-bottom: 0px;
     font-style: normal;
@@ -45,6 +45,7 @@
 
 .arrow {
     align-self: center;
+    cursor: pointer;
 }
 
 .user {
@@ -70,6 +71,7 @@
 #search-icon {
     padding: 20px 10px;
     font-size: 15px !important;
+    cursor: pointer;
 }
 
 .input-text {
@@ -88,6 +90,7 @@
     font-size: 22px;
     padding-left: 25px;
     color: #333333;
+    cursor: pointer;
 }
 
 .setting {
@@ -96,6 +99,7 @@
     padding-left: 25px;
     padding-right: 25px;
     color: #333333;
+    cursor: pointer;
 }
 
 .date {

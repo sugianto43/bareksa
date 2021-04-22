@@ -10,11 +10,9 @@ function PieChart(props) {
       show: true,
     },
     labels: label,
-    // labels: ["#item1", "#item2", "#item3", "#item4"],
     colors: ["#725E9C", "#5C8F94", "#EBA45E", "#E4EAEB"],
   };
   const series = serie;
-  // series: [44, 55, 15, 40],
 
   return (
     <div className="pie-container">
@@ -23,7 +21,7 @@ function PieChart(props) {
         <p className="dots">...</p>
       </div>
       <div className="pie">
-        <Chart options={options} series={series} type="pie" width='300'/>
+        <Chart options={options} series={series} type="pie" width='100%'/>
       </div>
     </div>
   );

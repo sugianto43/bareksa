@@ -7,17 +7,20 @@ import "./Table.css";
 function Table() {
   const [datas, setDatas] = useState([]);
   useEffect(() => {
-    axios
-      .get(
-        "https://ecdba7fe-ec10-4d90-8d0e-80f8364c7624.mock.pstmn.io/takehometest/frontend/web/dashboard"
-      )
-      .then((res) => {
-        console.log("data", res);
-        setDatas(res.data.data.orders);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+    const loadData = async () => {
+      await axios
+        .get(
+          "https://ecdba7fe-ec10-4d90-8d0e-80f8364c7624.mock.pstmn.io/takehometest/frontend/web/dashboard"
+        )
+        .then((res) => {
+          console.log("data", res.data.data.orders);
+          setDatas(res.data.data.orders);
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    };
+    loadData();
   }, []);
   return (
     <>
@@ -60,7 +63,7 @@ function Table() {
                   </td>
                   <td className="data-table">
                     <p
-                      className="text-table"
+                      className="text-table status"
                       style={{
                         backgroundColor:
                           data.status === "pending"
@@ -71,7 +74,7 @@ function Table() {
                             ? "#789764"
                             : "",
                         borderRadius: "4px",
-                        padding: "5px",
+                        padding: "5px 10px",
                         textAlign: "center",
                       }}
                     >

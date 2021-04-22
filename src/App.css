@@ -1,7 +1,7 @@
 .App {
   display: grid;
   grid-gap: 20px;
-  grid-template-rows: 0.5fr 2fr 2.5fr;
+  grid-template-rows: 0.5fr 1.8fr 2fr;
   grid-template-areas: 
   'header'
   'graph'
@@ -59,4 +59,19 @@
   grid-area: table;
   border-bottom: 1px solid #DDDDDD;
   margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 550px){
+  .App {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      'header'
+      'chart1'
+      'chart2'
+      'graph'
+      'calendar'
+      'table'
+    ;
+  }
 }

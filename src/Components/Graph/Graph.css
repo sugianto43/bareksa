@@ -26,3 +26,31 @@
     font-weight: 600;
     font-size: 14px;
 }
+
+.top-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #9C9C9C;
+    margin-bottom: 0px;
+}
+
+.middle-text {
+    color: #333333;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.bottom-text {
+    color: #5F9F2F;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
